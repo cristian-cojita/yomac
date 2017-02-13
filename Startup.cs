@@ -89,7 +89,6 @@ namespace yomac
             });
 
             context.Database.Migrate();
-
         }
     }
 }
