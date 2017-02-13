@@ -17,8 +17,12 @@ namespace yomac
 {
     public class Startup
     {
+        private IHostingEnvironment _env;
+        
         public Startup(IHostingEnvironment env)
         {
+            _env = env;
+            
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
