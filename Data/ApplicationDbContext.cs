@@ -15,6 +15,9 @@ namespace yomac.Data
         {
         }
 
+        public DbSet<Convector> ConvectorRecords { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
